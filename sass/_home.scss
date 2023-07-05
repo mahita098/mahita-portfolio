@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+}
+
+.content-wrapper {
+  padding: 10px;
+  @include mini-laptop {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .socialprofile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include medium {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 2;
+    }
+    .profilepicture {
+      margin-top: 20px;
+      img {
+        width: 220px;
+        margin: auto;
+        border-radius: 50%;
+        display: flex;
+        border: 4px solid black;
+
+        &:hover {
+          filter: drop-shadow(0 0 2em black);
+        }
+
+        @include mini-laptop {
+          width: 400px;
+          margin: 0;
+        }
+      }
+    }
+
+    .sociallogo {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+
+      @include mini-laptop {
+        width: 400px;
+        margin: 0;
+      }
+    }
+  }
+
+  .info-box {
+    padding: 10px;
+    margin-top: 30px;
+
+    @include medium {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-row-end: 2;
+      grid-column-end: 3;
+    }
+
+    .aboutmyself {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+
+      h1 {
+        font-size: clamp(20px, 3.5vw, 46px);
+        font-family: "Bree Serif", serif;
+      }
+
+      p {
+        font-size: clamp(16px, 3.5vw, 18px);
+      }
+
+      @include mini-laptop {
+        justify-content: center;
+        text-align: left;
+      }
+    }
+
+    .buttonbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      gap: 20px;
+
+      @include mini-laptop {
+        // grid-row-start: 2;
+        // grid-column-start: 1;
+        // grid-row-end: 3;
+        // grid-column-end: 3;
+        gap: 50px;
+        display: unset;
+        margin: 0;
+      }
+
+      button {
+        padding: 10px 30px;
+        margin-top: 40px;
+        font-family: "Aladin", cursive;
+        color: rgb(46, 42, 42);
+        box-shadow: 5px -5px 16px rgb(122, 117, 117);
+        transition: 0.5s;
+        border-radius: 5px;
+        background-color: transparent;
+        border-color: transparent;
+
+        &:hover {
+          color: rgb(53, 58, 58);
+          font-weight: 800;
+          transition: 0.5s;
+          box-shadow: 5px -5px 16px rgb(102, 91, 91);
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(46, 42, 42);
+          font-size: clamp(18px, 3.5vw, 28px);
+
+          .svgbox {
+            padding-right: 20px;
+          }
+        }
+
+        @include medium {
+          padding: 20px 30px;
+        }
+      }
+    }
+  }
+
+  .techstackbox {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // margin: auto;
+    // gap: 20px;
+
+    @include medium {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-column-end: 3;
+    }
+
+    .techbox {
+    }
+  }
+}
