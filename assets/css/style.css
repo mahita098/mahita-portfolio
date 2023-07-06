@@ -467,6 +467,10 @@ body {
   width: 100%;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .content-wrapper {
   padding: 10px;
 }
@@ -662,4 +666,236 @@ body {
 }
 .content-wrapper .techstackbox .techbox .thelogo p {
   font-family: "Lora", serif;
+}
+
+.container .navigation {
+  width: 100%;
+}
+@media (min-width: 767px) {
+  .container .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+.container .navigation::before {
+  background-color: #afa4a4;
+  content: "";
+  display: block;
+  height: 2px;
+  order: 2;
+  width: 100%;
+}
+.container .navigation .navigation_link {
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+}
+.container .navigation .navigation_list {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  flex-shrink: 0;
+  order: 3;
+  margin-left: 55px;
+}
+.container .navigation .navigation_list .navigation_list_items {
+  padding-left: 11px;
+  padding-right: 37px;
+}
+.container .intro .name {
+  font-family: "Aladin", cursive;
+  font-size: clamp(40px, 3.5vw, 64px);
+  margin-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  color: #3f3838;
+}
+.container .intro .inlink {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(16px, 3.5vw, 20px);
+  font-weight: 100;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  color: #3f3838;
+}
+.container .intro .myintro {
+  font-size: clamp(16px, 3.5vw, 23px);
+  color: #3f3838;
+  margin-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.container .resume-subhead h2 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.container .resume-subhead .resume-groups {
+  margin-right: 10px;
+  padding-top: 42px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30%;
+}
+@media (min-width: 767px) {
+  .container .resume-subhead .resume-groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+.container .resume-subhead .resume-groups .groups ul li {
+  list-style: none;
+}
+.container .resume-subhead .resume-groups .groups ul li .groups-lists {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container .resume-subhead .resume-groups .groups .groups-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.container .resume-subhead .education,
+.container .resume-subhead .achievement {
+  padding-top: 40px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+.container .resume-subhead .education .education_lists,
+.container .resume-subhead .education .achievements_lists,
+.container .resume-subhead .achievement .education_lists,
+.container .resume-subhead .achievement .achievements_lists {
+  display: flex;
+  flex-direction: row;
+  line-height: 38px;
+}
+.container .resume-subhead .education .education_lists .year,
+.container .resume-subhead .education .achievements_lists .year,
+.container .resume-subhead .achievement .education_lists .year,
+.container .resume-subhead .achievement .achievements_lists .year {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 45px;
+}
+.container .resume-subhead .education .education_lists .education_desc,
+.container .resume-subhead .education .education_lists .achievement_desc,
+.container .resume-subhead .education .achievements_lists .education_desc,
+.container .resume-subhead .education .achievements_lists .achievement_desc,
+.container .resume-subhead .achievement .education_lists .education_desc,
+.container .resume-subhead .achievement .education_lists .achievement_desc,
+.container .resume-subhead .achievement .achievements_lists .education_desc,
+.container .resume-subhead .achievement .achievements_lists .achievement_desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+}
+.container .resume-subhead .education .education_lists .education_desc .education_desc_inst,
+.container .resume-subhead .education .education_lists .education_desc .achievement_desc_inst,
+.container .resume-subhead .education .education_lists .achievement_desc .education_desc_inst,
+.container .resume-subhead .education .education_lists .achievement_desc .achievement_desc_inst,
+.container .resume-subhead .education .achievements_lists .education_desc .education_desc_inst,
+.container .resume-subhead .education .achievements_lists .education_desc .achievement_desc_inst,
+.container .resume-subhead .education .achievements_lists .achievement_desc .education_desc_inst,
+.container .resume-subhead .education .achievements_lists .achievement_desc .achievement_desc_inst,
+.container .resume-subhead .achievement .education_lists .education_desc .education_desc_inst,
+.container .resume-subhead .achievement .education_lists .education_desc .achievement_desc_inst,
+.container .resume-subhead .achievement .education_lists .achievement_desc .education_desc_inst,
+.container .resume-subhead .achievement .education_lists .achievement_desc .achievement_desc_inst,
+.container .resume-subhead .achievement .achievements_lists .education_desc .education_desc_inst,
+.container .resume-subhead .achievement .achievements_lists .education_desc .achievement_desc_inst,
+.container .resume-subhead .achievement .achievements_lists .achievement_desc .education_desc_inst,
+.container .resume-subhead .achievement .achievements_lists .achievement_desc .achievement_desc_inst {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 10px;
+}
+.container .resume-subhead .education .education_lists .fcc a,
+.container .resume-subhead .education .achievements_lists .fcc a,
+.container .resume-subhead .achievement .education_lists .fcc a,
+.container .resume-subhead .achievement .achievements_lists .fcc a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.container .resume-subhead .education .education_lists .ongoing,
+.container .resume-subhead .education .achievements_lists .ongoing,
+.container .resume-subhead .achievement .education_lists .ongoing,
+.container .resume-subhead .achievement .achievements_lists .ongoing {
+  font-size: 12px;
+  color: rgb(170, 84, 84);
+}
+.container .resume-subhead .work {
+  margin-left: 10px;
+  padding-top: 40px;
+}
+.container .resume-subhead .work .workgroup {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  padding-bottom: 20px;
+}
+.container .resume-subhead .work .workgroup .workplace {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  width: 25%;
+}
+.container .resume-subhead .work .workgroup .workdescription {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  width: 50%;
+}
+.container .resume-subhead .projects {
+  margin-left: 10px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+}
+.container .resume-subhead .projects .projectlink a {
+  color: rgb(94, 167, 185);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+hr {
+  margin-left: 16px;
+  border: 1px solid #afa4a4;
+}
+
+/* courses not yet added, its on the achievements */
+.view {
+  padding: 8px;
+  color: rgb(18, 100, 121);
+  font-size: 15px;
+}
+
+.sociallogo svg {
+  float: right;
+  padding: 0 4px;
+}
+
+.projectlink {
+  margin-left: 10px;
+  border: 1px solid rgb(94, 167, 185);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.projectlink a:hover {
+  color: black;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
