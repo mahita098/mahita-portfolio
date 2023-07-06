@@ -1,11 +1,17 @@
-$(".hamburger1").on("click", function(){
-    $(this).toggleClass("active");
-    $(".menu-item1").toggleClass("active");
-  })
+// console.log("main.js loaded");
 
+// const hamburger1 = document.querySelector(".hamburger1");
+// console.log(hamburger1);
 
+document.querySelector(".hamburger1").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".menu-item1").classList.toggle("active");
+});
 
-
+// $(".hamburger1").on("click", function () {
+//   $(this).toggleClass("active");
+//   $(".menu-item1").toggleClass("active");
+// });
 
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'

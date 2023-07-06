@@ -327,16 +327,16 @@ header .navbar .logo {
   padding: 20px;
 }
 header .navbar .logo a {
-  font-family: "Aladin", cursive;
+  font-family: "Lora", serif;
   color: #000;
-  font-size: clamp(28px, 3.5vw, 46px);
+  font-size: clamp(28px, 3.5vw, 28px);
   cursor: pointer;
   text-decoration: none;
   padding-top: 20px;
 }
 header .navbar .menu1 .menu-item1 {
   gap: 20px;
-  font-size: clamp(16px, 3.5vw, 28px);
+  font-size: clamp(16px, 3.5vw, 20px);
   position: fixed;
   top: 0;
   left: -100%;
@@ -352,7 +352,7 @@ header .navbar .menu1 .menu-item1 {
 }
 header .navbar .menu1 .menu-item1.active {
   left: 0;
-  background-color: #000;
+  background-color: #fff;
 }
 header .navbar .menu1 .menu-item1:not(.active) {
   background: transparent;
@@ -369,7 +369,7 @@ header .navbar .menu1 .menu-item1:not(.active) {
   }
 }
 header .navbar .menu1 li a {
-  font-family: "Aladin", cursive;
+  font-family: "Lora", serif;
   text-decoration: none;
   cursor: pointer;
   color: black;
@@ -448,6 +448,12 @@ header .navbar .menu1 .hamburger1.active div span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
+footer {
+  padding: 10px;
+  text-align: center;
+  color: grey;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -466,10 +472,10 @@ body {
 }
 @media (min-width: 991px) {
   .content-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
   }
 }
@@ -506,6 +512,11 @@ body {
     margin: 0;
   }
 }
+@media (min-width: 1450px) {
+  .content-wrapper .socialprofile .profilepicture img {
+    width: 480px;
+  }
+}
 .content-wrapper .socialprofile .sociallogo {
   position: relative;
   display: flex;
@@ -520,14 +531,14 @@ body {
   }
 }
 .content-wrapper .info-box {
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   margin-top: 30px;
 }
 @media (min-width: 767px) {
   .content-wrapper .info-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     grid-row-start: 1;
     grid-column-start: 2;
     grid-row-end: 2;
@@ -541,11 +552,13 @@ body {
   text-align: center;
 }
 .content-wrapper .info-box .aboutmyself h1 {
-  font-size: clamp(20px, 3.5vw, 46px);
-  font-family: "Bree Serif", serif;
+  margin: 0;
+  font-size: clamp(20px, 3.5vw, 69px);
+  font-family: "Lora", serif;
 }
 .content-wrapper .info-box .aboutmyself p {
-  font-size: clamp(16px, 3.5vw, 18px);
+  font-size: clamp(22px, 3.5vw, 18px);
+  font-family: "Indie Flower", cursive;
 }
 @media (min-width: 991px) {
   .content-wrapper .info-box .aboutmyself {
@@ -558,12 +571,12 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  gap: 20px;
+  gap: 30px;
 }
 @media (min-width: 991px) {
   .content-wrapper .info-box .buttonbox {
-    gap: 50px;
-    display: unset;
+    gap: 30px;
+    justify-content: left;
     margin: 0;
   }
 }
@@ -587,15 +600,19 @@ body {
 .content-wrapper .info-box .buttonbox button a {
   text-decoration: none;
   color: rgb(46, 42, 42);
-  font-size: clamp(18px, 3.5vw, 28px);
+  font-size: clamp(18px, 3.5vw, 25px);
+  font-family: "Indie Flower", cursive;
 }
 .content-wrapper .info-box .buttonbox button a .svgbox {
   padding-right: 20px;
 }
 @media (min-width: 767px) {
   .content-wrapper .info-box .buttonbox button {
-    padding: 20px 30px;
+    padding: 15px 65px;
   }
+}
+.content-wrapper .techstackbox {
+  margin-top: 50px;
 }
 @media (min-width: 767px) {
   .content-wrapper .techstackbox {
@@ -604,4 +621,45 @@ body {
     grid-row-end: 3;
     grid-column-end: 3;
   }
+}
+.content-wrapper .techstackbox h1 {
+  text-align: center;
+  font-family: "Lora", serif;
+}
+.content-wrapper .techstackbox h1 span {
+  font-size: clamp(18px, 3.5vw, 18px);
+  font-weight: 100;
+  font-family: "Indie Flower", cursive;
+}
+.content-wrapper .techstackbox .techbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  margin: 0px 60px;
+  padding: 15px;
+  box-shadow: 0px 50px 100px 0px rgba(206, 198, 198, 0.5);
+}
+@media (min-width: 575px) {
+  .content-wrapper .techstackbox .techbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 767px) {
+  .content-wrapper .techstackbox .techbox {
+    gap: 50px;
+  }
+}
+.content-wrapper .techstackbox .techbox .thelogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.content-wrapper .techstackbox .techbox .thelogo p {
+  font-family: "Lora", serif;
 }/*# sourceMappingURL=style.css.map */
