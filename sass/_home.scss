@@ -18,7 +18,7 @@ a:link {
 .content-wrapper {
   padding: 10px;
   @include mini-laptop {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -175,6 +175,10 @@ a:link {
       grid-column-start: 1;
       grid-row-end: 3;
       grid-column-end: 3;
+    }
+
+    @include laptop {
+      margin-top: 100px;
     }
 
     h1 {

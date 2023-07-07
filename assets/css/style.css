@@ -479,17 +479,34 @@ footer {
   align-items: center;
   margin-right: 64px;
 }
+.container .navigation .navigation_link svg {
+  display: none;
+}
+@media (min-width: 767px) {
+  .container .navigation .navigation_link svg {
+    display: block;
+  }
+}
 .container .navigation .navigation_list {
   align-items: center;
   display: flex;
   list-style: none;
   flex-shrink: 0;
   order: 3;
-  margin-left: 55px;
+  padding-top: 20px;
+}
+@media (min-width: 767px) {
+  .container .navigation .navigation_list {
+    margin-left: 55px;
+    padding-top: unset;
+  }
 }
 .container .navigation .navigation_list .navigation_list_items {
   padding-left: 11px;
   padding-right: 37px;
+}
+.container .navigation .navigation_list .navigation_list_items a {
+  color: #3f3838;
 }
 .container .intro .name {
   font-family: "Aladin", cursive;
@@ -511,8 +528,12 @@ footer {
   font-size: clamp(16px, 3.5vw, 23px);
   color: #3f3838;
   margin-left: 10px;
-  padding-top: 50px;
   padding-bottom: 10px;
+}
+@media (min-width: 767px) {
+  .container .intro .myintro {
+    padding-top: 50px;
+  }
 }
 .container .resume-subhead h2 {
   font-size: 25px;
@@ -533,21 +554,19 @@ footer {
 }
 @media (min-width: 767px) {
   .container .resume-subhead .resume-groups {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 10px;
     margin-left: 10px;
   }
 }
 .container .resume-subhead .resume-groups .groups ul li {
   list-style: none;
-}
-.container .resume-subhead .resume-groups .groups ul li .groups-lists {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
-.container .resume-subhead .resume-groups .groups .groups-title {
+.container .resume-subhead .resume-groups .groups h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding-bottom: 15px;
@@ -641,7 +660,8 @@ footer {
 }
 @media (min-width: 767px) {
   .container .resume-subhead .work .workgroup {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
   }
 }
 .container .resume-subhead .work .workgroup .workplace {
@@ -649,20 +669,10 @@ footer {
   font-size: 19px;
   font-weight: 600;
 }
-@media (min-width: 767px) {
-  .container .resume-subhead .work .workgroup .workplace {
-    width: 25%;
-  }
-}
 .container .resume-subhead .work .workgroup .workdescription {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 30px;
-}
-@media (min-width: 767px) {
-  .container .resume-subhead .work .workgroup .workdescription {
-    width: 50%;
-  }
 }
 .container .resume-subhead .projects {
   margin-left: 10px;
@@ -699,7 +709,6 @@ hr {
   border: 1px solid #afa4a4;
 }
 
-/* courses not yet added, its on the achievements */
 * {
   padding: 0;
   margin: 0;
@@ -722,7 +731,7 @@ a:link {
 }
 @media (min-width: 991px) {
   .content-wrapper {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -870,6 +879,11 @@ a:link {
     grid-column-start: 1;
     grid-row-end: 3;
     grid-column-end: 3;
+  }
+}
+@media (min-width: 1450px) {
+  .content-wrapper .techstackbox {
+    margin-top: 100px;
   }
 }
 .content-wrapper .techstackbox h1 {

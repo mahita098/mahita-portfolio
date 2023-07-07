@@ -22,6 +22,14 @@
       align-items: center;
       margin-right: 64px;
 
+      svg {
+        display: none;
+
+        @include medium {
+          display: block;
+        }
+      }
+
       @include medium {
       }
     }
@@ -32,11 +40,20 @@
       list-style: none;
       flex-shrink: 0;
       order: 3;
-      margin-left: 55px;
+      padding-top: 20px;
+
+      @include medium {
+        margin-left: 55px;
+        padding-top: unset;
+      }
 
       .navigation_list_items {
         padding-left: 11px;
         padding-right: 37px;
+
+        a {
+          color: #3f3838;
+        }
       }
     }
   }
@@ -64,8 +81,12 @@
       font-size: clamp(16px, 3.5vw, 23px);
       color: #3f3838;
       margin-left: 10px;
-      padding-top: 50px;
+
       padding-bottom: 10px;
+
+      @include medium {
+        padding-top: 50px;
+      }
     }
   }
 
@@ -90,8 +111,8 @@
       gap: 30px;
 
       @include medium {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         margin-right: 10px;
         margin-left: 10px;
       }
@@ -99,15 +120,12 @@
       .groups {
         ul li {
           list-style: none;
-
-          .groups-lists {
-            font-family: "Roboto", sans-serif;
-            font-size: 18px;
-            line-height: 30px;
-          }
+          font-family: "Roboto", sans-serif;
+          font-size: 18px;
+          line-height: 30px;
         }
 
-        .groups-title {
+        h3 {
           font-family: "Roboto", sans-serif;
           font-size: 20px;
           padding-bottom: 15px;
@@ -175,27 +193,19 @@
         padding-bottom: 20px;
 
         @include medium {
-          flex-direction: row;
+          display: grid;
+          grid-template-columns: 1fr 1.5fr;
         }
 
         .workplace {
           font-family: "Roboto", sans-serif;
           font-size: 19px;
           font-weight: 600;
-
-          @include medium {
-            width: 25%;
-          }
         }
-
         .workdescription {
           font-family: "Roboto", sans-serif;
           font-size: 16px;
           line-height: 30px;
-
-          @include medium {
-            width: 50%;
-          }
         }
       }
     }
@@ -242,5 +252,3 @@ hr {
   margin-left: 16px;
   border: 1px solid #afa4a4;
 }
-
-/* courses not yet added, its on the achievements */
