@@ -1,0 +1,147 @@
+// .container {
+//   height: 1820px;
+//   margin: auto 10%;
+// }
+
+.projectheader {
+  margin: 20px 40px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 25px;
+}
+
+.box-wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  width: 100%;
+  height: 70%;
+
+  .box {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+
+    .boxdescription {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        width: auto;
+        height: 175px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgb(95, 69, 69);
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      a {
+        padding: 25px 15px 15px 15px;
+        list-style: none;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+
+        &:hover {
+          transition: 0.3s;
+        }
+
+        .github {
+          border: 2px solid transparent;
+          box-shadow: 4px 4px 15px rgb(107, 87, 87);
+          padding: 10px;
+          border-radius: 10px;
+          color: black;
+
+          &:hover {
+            box-shadow: 4px 4px 15px rgb(95, 69, 69);
+            transition: 0.5s;
+            color: rgb(252, 252, 252);
+            font-weight: bold;
+          }
+        }
+
+        .page {
+          border: 2px solid transparent;
+          box-shadow: 4px 4px 15px rgb(95, 69, 69);
+          padding: 10px;
+          border-radius: 10px;
+          color: black;
+
+          &:hover {
+            color: rgb(252, 252, 252);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 4px 4px 15px rgb(95, 69, 69);
+      transition: 0.5s;
+    }
+
+    &:not(:hover) {
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .box-wrapper {
+    display: unset;
+  }
+
+  .projectheader {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .github {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .page {
+    padding: 5px;
+    font-size: 9px;
+  }
+
+  .project1 img {
+    width: 300px;
+  }
+
+  .project2 img {
+    width: 300px;
+  }
+
+  .project6 img {
+    width: 300px;
+  }
+
+  .project7 img {
+    width: 300px;
+  }
+
+  .project9 img {
+    width: 300px;
+  }
+}
