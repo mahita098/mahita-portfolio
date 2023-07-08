@@ -41,5 +41,13 @@ function handleRouting(href) {
     // Handle the Resume page routing
     // You can load the content dynamically or perform any other action
     console.log("Navigating to Resume");
+  } else if (href === "/projects") {
+    // Handle the Resume page routing
+    // You can load the content dynamically or perform any other action
+    console.log("Navigating to Projects");
+  } else if (href === "/blog") {
+    // Handle the Resume page routing
+    // You can load the content dynamically or perform any other action
+    console.log("Navigating to Blog");
   }
 }
