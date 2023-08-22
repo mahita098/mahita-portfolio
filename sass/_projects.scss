@@ -20,6 +20,7 @@
   width: 100%;
 
   .box {
+    position: relative;
     border: 1px solid transparent;
     border-radius: 10px;
     display: flex;
@@ -73,7 +74,7 @@
           &:hover {
             box-shadow: 4px 4px 15px rgb(95, 69, 69);
             transition: 0.5s;
-            color: rgb(252, 252, 252);
+            color: rgb(139, 61, 61);
             font-weight: bold;
           }
         }
@@ -86,7 +87,7 @@
           color: black;
 
           &:hover {
-            color: rgb(252, 252, 252);
+            color: rgb(139, 61, 61);
             font-weight: bold;
           }
         }

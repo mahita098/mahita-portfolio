@@ -725,6 +725,7 @@ hr {
   width: 100%;
 }
 .box-wrapper .box {
+  position: relative;
   border: 1px solid transparent;
   border-radius: 10px;
   display: flex;
@@ -775,7 +776,7 @@ hr {
 .box-wrapper .box .links a .github:hover {
   box-shadow: 4px 4px 15px rgb(95, 69, 69);
   transition: 0.5s;
-  color: rgb(252, 252, 252);
+  color: rgb(139, 61, 61);
   font-weight: bold;
 }
 .box-wrapper .box .links a .page {
@@ -786,7 +787,7 @@ hr {
   color: black;
 }
 .box-wrapper .box .links a .page:hover {
-  color: rgb(252, 252, 252);
+  color: rgb(139, 61, 61);
   font-weight: bold;
 }
 .box-wrapper .box:hover {
