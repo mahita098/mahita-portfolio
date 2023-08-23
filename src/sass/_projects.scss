@@ -120,6 +120,7 @@
 @media (max-width: 680px) {
   .box-wrapper {
     display: unset;
+    grid-template-columns: 1fr;
   }
 
   .projectheader {
@@ -155,5 +156,17 @@
 
   .project9 img {
     width: 300px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .box-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
