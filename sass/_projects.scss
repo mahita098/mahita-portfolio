@@ -10,6 +10,14 @@
   font-size: 16px;
   font-weight: 400px;
   line-height: 25px;
+
+  p {
+    span {
+      color: rgb(157, 157, 161);
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
 }
 
 .box-wrapper {
@@ -32,6 +40,10 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+    }
+
+    .hashtags {
+      color: rgb(157, 157, 161);
     }
 
     .images {

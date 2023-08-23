@@ -716,6 +716,11 @@ hr {
   font-weight: 400px;
   line-height: 25px;
 }
+.projectheader p span {
+  color: rgb(157, 157, 161);
+  font-weight: 400;
+  font-size: 14px;
+}
 
 .box-wrapper {
   margin-top: 30px;
@@ -737,6 +742,9 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.box-wrapper .box .hashtags {
+  color: rgb(157, 157, 161);
 }
 .box-wrapper .box .images {
   display: flex;
