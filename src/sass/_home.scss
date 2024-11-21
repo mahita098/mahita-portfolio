@@ -69,12 +69,12 @@ a:link {
         }
 
         @include mini-laptop {
-          width: 400px;
+          width: 350px;
           margin: 0;
         }
 
         @include laptop {
-          width: 480px;
+          width: 400px;
         }
       }
     }
